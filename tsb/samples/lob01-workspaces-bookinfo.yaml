@@ -1,0 +1,39 @@
+---
+apiVersion: api.tsb.tetrate.io/v2
+kind: Workspace
+metadata:
+  name: lob01-bookinfo-dev
+  organization: tetrate
+  tenant: lob-01-nonprod
+spec:
+  description: Development workspace for bookinfo
+  displayName: Bookinfo Dev
+  namespaceSelector:
+    names:
+    - '*/bookinfo-dev'
+---
+apiVersion: api.tsb.tetrate.io/v2
+kind: Workspace
+metadata:
+  name: lob01-bookinfo-test
+  organization: tetrate
+  tenant: lob-01-nonprod
+spec:
+  description: Testing workspace for bookinfo
+  displayName: Bookinfo Test
+  namespaceSelector:
+    names:
+    - '*/bookinfo-test'
+---
+apiVersion: api.tsb.tetrate.io/v2
+kind: Workspace
+metadata:
+  name: lob01-bookinfo-prod
+  organization: tetrate
+  tenant: lob-01-prod
+spec:
+  description: Production workspace for bookinfo
+  displayName: Bookinfo Prod
+  namespaceSelector:
+    names:
+    - '*/bookinfo-prod'

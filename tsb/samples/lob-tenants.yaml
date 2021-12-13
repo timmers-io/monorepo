@@ -1,0 +1,36 @@
+---
+apiVersion: api.tsb.tetrate.io/v2
+kind: Tenant
+metadata:
+  name: lob-01-nonprod
+  organization: tetrate
+spec:
+  description: Non production - dev, test, uat
+  displayName: LoB 01 - non production
+---
+apiVersion: api.tsb.tetrate.io/v2
+kind: Tenant
+metadata:
+  name: lob-01-prod
+  organization: tetrate
+spec:
+  description: Production 
+  displayName: LoB 01 - production
+---
+apiVersion: api.tsb.tetrate.io/v2
+kind: Tenant
+metadata:
+  name: lob-02-nonprod
+  organization: tetrate
+spec:
+  description: Non production - dev, test, uat
+  displayName: LoB 02 - non production
+---
+apiVersion: api.tsb.tetrate.io/v2
+kind: Tenant
+metadata:
+  name: lob-02-prod
+  organization: tetrate
+spec:
+  description: Production
+  displayName: LoB 02 - production
